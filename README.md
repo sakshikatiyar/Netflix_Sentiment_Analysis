@@ -1,68 +1,71 @@
-📺 Netflix Sentiment Analysis using Neural Networks
-📌 Overview
+# 📺 Netflix Sentiment Analysis using Neural Networks  
 
-This project applies Natural Language Processing (NLP) and Neural Networks to perform sentiment analysis on Netflix reviews.
-The model classifies user reviews into positive, negative, or neutral sentiments, helping understand audience opinions and improving recommendation systems.
+## 📌 Overview  
+This project applies **Natural Language Processing (NLP)** and **Neural Networks** to perform sentiment analysis on Netflix reviews.  
+The model classifies user reviews into **positive, negative, or neutral** sentiments, helping understand audience opinions and improving recommendation systems.  
 
-📂 Dataset
+---
 
-Contains Netflix reviews with text and labeled sentiment.
+## 📂 Dataset  
+- Contains Netflix reviews with text and labeled sentiment.  
+- Preprocessing steps include:  
+  - Tokenization & text cleaning  
+  - Stopword removal  
+  - Sequence padding for uniform length  
+  - Label encoding (Positive, Negative, Neutral)  
 
-Preprocessing steps include:
+---
 
-Tokenization & text cleaning
+## 🧠 Model Architecture  
+The model is implemented using **Keras & TensorFlow** with the following layers:  
 
-Stopword removal
+- **Embedding Layer** → Converts words into dense vector representations  
+- **LSTM Layer** → Captures sequential dependencies in reviews  
+- **Dense Layers** → Fully connected layers for classification  
+- **Output Layer** → Softmax activation for multi-class sentiment prediction  
 
-Sequence padding for uniform length
+**Loss Function** → Categorical Crossentropy  
+**Optimizer** → Adam  
 
-Label encoding (Positive, Negative, Neutral)
+---
 
-🧠 Model Architecture
+## 📊 Results  
+- Achieved **85–90% accuracy** on the test set  
+- Training & validation accuracy/loss plotted for performance monitoring  
 
-The model is implemented using Keras & TensorFlow with the following layers:
+**Example Predictions:**  
+- “I loved this series!” → **Positive**  
+- “It was boring and terrible.” → **Negative**  
+- “The show was okay, not too great.” → **Neutral**  
 
-Embedding Layer: Converts words into dense vector representations
+---
 
-LSTM Layer: Captures sequential dependencies in reviews
+## 🚀 Applications  
+- 🎬 **Entertainment Industry** → Analyze audience reviews automatically  
+- 🛒 **E-commerce** → Product review classification  
+- 💬 **Social Media Monitoring** → Detect customer sentiment in real-time  
 
-Dense Layers: Fully connected layers for classification
+---
 
-Output Layer: Softmax activation for multi-class sentiment prediction
+## 🛠️ Technologies Used  
+- Python  
+- Pandas, NumPy  
+- TensorFlow / Keras  
+- Matplotlib, Seaborn  
+- scikit-learn  
 
-Loss Function: Categorical Crossentropy
-Optimizer: Adam
+---
 
-📊 Results
+## 📖 About  
+A machine learning project that performs **sentiment analysis on Netflix content reviews** using **NLP and neural network models (LSTM)**.  
+The project includes preprocessing steps, model training, evaluation, and visualization of results.  
 
-Achieved 85–90% accuracy on the test set
+---
 
-Training & validation accuracy/loss plotted for performance monitoring
+## 📌 Resources  
+- Dataset (Netflix Reviews)  
+- Jupyter Notebook for model training & evaluation  
 
-Example Predictions:
+---
 
-“I loved this series!” → Positive
-
-“It was boring and terrible.” → Negative
-
-“The show was okay, not too great.” → Neutral
-
-🚀 Applications
-
-Entertainment Industry → Analyze audience reviews automatically
-
-E-commerce → Product review classification
-
-Social Media Monitoring → Detect customer sentiment in real-time
-
-Technologies Used
-
-Python
-
-Pandas, NumPy
-
-TensorFlow / Keras
-
-Matplotlib, Seaborn
-
-scikit-learn
+✨ If you like this project, don’t forget to **⭐ star this repo**!  
